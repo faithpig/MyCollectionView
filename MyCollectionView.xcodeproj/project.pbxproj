@@ -11,6 +11,9 @@
 		2473EB9C1F320449006F814D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2473EB9B1F320449006F814D /* AppDelegate.m */; };
 		2473EB9E1F320449006F814D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2473EB9D1F320449006F814D /* Assets.xcassets */; };
 		2473EBA11F320449006F814D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2473EB9F1F320449006F814D /* LaunchScreen.storyboard */; };
+		2473EBAA1F320480006F814D /* MyCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2473EBA91F320480006F814D /* MyCollectionViewController.m */; };
+		2473EBB31F320555006F814D /* CollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2473EBB21F320555006F814D /* CollectionViewCell.m */; };
+		2473EBB61F320577006F814D /* MyLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 2473EBB51F320577006F814D /* MyLayout.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +24,12 @@
 		2473EB9D1F320449006F814D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2473EBA01F320449006F814D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2473EBA21F320449006F814D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2473EBA81F320480006F814D /* MyCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyCollectionViewController.h; sourceTree = "<group>"; };
+		2473EBA91F320480006F814D /* MyCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyCollectionViewController.m; sourceTree = "<group>"; };
+		2473EBB11F320555006F814D /* CollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CollectionViewCell.h; path = ../CollectionViewCell.h; sourceTree = "<group>"; };
+		2473EBB21F320555006F814D /* CollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CollectionViewCell.m; path = ../CollectionViewCell.m; sourceTree = "<group>"; };
+		2473EBB41F320577006F814D /* MyLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyLayout.h; sourceTree = "<group>"; };
+		2473EBB51F320577006F814D /* MyLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyLayout.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +68,12 @@
 				2473EB9F1F320449006F814D /* LaunchScreen.storyboard */,
 				2473EBA21F320449006F814D /* Info.plist */,
 				2473EB971F320449006F814D /* Supporting Files */,
+				2473EBA81F320480006F814D /* MyCollectionViewController.h */,
+				2473EBA91F320480006F814D /* MyCollectionViewController.m */,
+				2473EBB11F320555006F814D /* CollectionViewCell.h */,
+				2473EBB21F320555006F814D /* CollectionViewCell.m */,
+				2473EBB41F320577006F814D /* MyLayout.h */,
+				2473EBB51F320577006F814D /* MyLayout.m */,
 			);
 			path = MyCollectionView;
 			sourceTree = "<group>";
@@ -102,6 +117,7 @@
 				TargetAttributes = {
 					2473EB931F320449006F814D = {
 						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = U8MTZKD85C;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -143,6 +159,9 @@
 			files = (
 				2473EB9C1F320449006F814D /* AppDelegate.m in Sources */,
 				2473EB991F320449006F814D /* main.m in Sources */,
+				2473EBB31F320555006F814D /* CollectionViewCell.m in Sources */,
+				2473EBAA1F320480006F814D /* MyCollectionViewController.m in Sources */,
+				2473EBB61F320577006F814D /* MyLayout.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -256,9 +275,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = U8MTZKD85C;
 				INFOPLIST_FILE = MyCollectionView/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = faithfish.MyCollectionView;
+				PRODUCT_BUNDLE_IDENTIFIER = com.faith;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -267,9 +287,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = U8MTZKD85C;
 				INFOPLIST_FILE = MyCollectionView/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = faithfish.MyCollectionView;
+				PRODUCT_BUNDLE_IDENTIFIER = com.faith;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -293,6 +314,7 @@
 				2473EBA71F320449006F814D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
